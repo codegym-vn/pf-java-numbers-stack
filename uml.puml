@@ -1,0 +1,12 @@
+@startuml
+
+class NumbersStack {
+    + <<constructor>>NumbersStack()
+    + push(int)
+}
+
+note left of NumbersStack::push(int) {
+    thêm một phần tử vào ngăn xếp
+}
+
+@enduml
