@@ -1,0 +1,8 @@
+qualitycheck:
+  image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay
+  services:
+    - docker:dind
+  script:
+    - docker run -v $PWD:/root/src binhsonnguyen/sonarqube-scanner
